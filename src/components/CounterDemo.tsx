@@ -5,22 +5,22 @@ function CounterDemo(): JSX.Element {
     useState(0);
 
   const handleAddOne = () => {
-    queueRerenderWithNewCounterValue(previousValue => previousValue+1);
+    queueRerenderWithNewCounterValue((previousValue) => previousValue + 1);
   };
 
   const handleSubtractFive = () => {
-    queueRerenderWithNewCounterValue(previousValue => previousValue-5);
+    queueRerenderWithNewCounterValue((previousValue) => previousValue - 5);
   };
   const handleAddFive = () => {
-    queueRerenderWithNewCounterValue(previousValue => previousValue+5);
+    queueRerenderWithNewCounterValue((previousValue) => previousValue + 5);
   };
   const handleSubtractOne = () => {
-    queueRerenderWithNewCounterValue(previousValue => previousValue-1);
+    queueRerenderWithNewCounterValue((previousValue) => previousValue - 1);
   };
 
   const handleReset = () => {
     queueRerenderWithNewCounterValue(0);
-  }
+  };
 
   return (
     <>
